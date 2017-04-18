@@ -1,10 +1,5 @@
 require 'sinatra'
 
 get '/' do
-
-  "Hello worlddd"
-end
-get '/wyncode' do
-
-  "Hello wyncode"
+  send_file File.join(settings.public_folder, 'index.html')
 end
